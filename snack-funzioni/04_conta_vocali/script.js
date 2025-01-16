@@ -5,8 +5,16 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 
-const filterVowel = (stringa) => stringa.split("").filter(vocale => 'aeiou'.includes(vocale.toLowerCase())).length;
+const filterVowel = (stringa) => {
+    let countVowel = 0;
+    const vowels = 'aeiou';
 
+    for (let i = 0; i < stringa.length; i++){
+        if(vowels.includes(stringa[i].toLowerCase())){countVowel++}
+    }
+return countVowel;
+}
+    
 
 // Invoca la funzione qui e stampa il risultato in console
 
