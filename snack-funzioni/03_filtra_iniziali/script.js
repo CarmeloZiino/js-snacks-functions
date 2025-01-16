@@ -5,8 +5,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+const filterLetter = (arr , letter) => arr.filter (name => name.charAt(0).toLowerCase() === letter.toLowerCase());
+
 
 // Invoca la funzione qui e stampa il risultato in console
+
+console.log(filterLetter(names, 'A'));
+
 
 
 
