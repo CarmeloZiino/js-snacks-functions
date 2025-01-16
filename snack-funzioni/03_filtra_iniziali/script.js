@@ -5,7 +5,16 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-const filterLetter = (arr , letter) => arr.filter (name => name.charAt(0).toLowerCase() === letter.toLowerCase());
+const filterLetter = (arr , letter) => {
+    let result = [];
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i].charAt(0).toLowerCase() === letter.toLowerCase()) {
+            result.push(arr[i]);
+          }
+        }
+        return result;
+}
+
 
 
 // Invoca la funzione qui e stampa il risultato in console
