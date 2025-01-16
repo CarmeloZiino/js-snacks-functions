@@ -3,11 +3,13 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
-// Dichiara la funzione qui.
+// Dichiara la funzione qui
 
+const firstLetterNames = () => names.map(name => name.charAt(0));
 
 // Invoca la funzione qui e stampa il risultato in console
 
+console.log(firstLetterNames());
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
