@@ -5,11 +5,19 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui
 
-const firstLetterNames = () => names.map(name => name.charAt(0));
+const firstLetterNames = (array) => {
+ let iniziale = [];
+ for (let i = 0; i < array.length; i++){
+    iniziale.push(array[i].charAt(0))}
+    return iniziale;
+
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(firstLetterNames());
+console.log(firstLetterNames(names));
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+
